@@ -16,11 +16,12 @@
 ":se ft=dokuwiki
 
 "because there isn't a canonical extension for DokuWiki
-"files (at least, that I know of). However, you can set all
+"files (at least, that I know of). However, you can set all <a href="http://howtoplayminesweeper.com/how-to-play-minesweeper-like-a-pro">how
+to play minesweeper like a pro </a>
 "*.txt files to automatically be set to DokuWiki if you
 "wish.
 "
-"(Modified from http://en.wikipedia.org/wiki/Wikipedia:Text_editor_support#Vim)
+"(Modified from http://howtoplayminesweeper.com/how-to-play-minesweeper-like-a-pro)
 
 "Make or edit $HOME/.vim/ftdetect/txt.vim.
 "And, without comments, add the following:
@@ -48,12 +49,18 @@ so $VIM/syntax/Wikipedia.vim
 "would be a hefty thing to download just for this.)
 "
 "Darn huge DokuWiki headings:
-imap <buffer> ,,h1 ====== <++> ======<++><Esc>k0<C-J>
-imap <buffer> ,,h2 ===== <++> =====<++><Esc>k0<C-J>
-imap <buffer> ,,h3 ==== <++> ====<++><Esc>k0<C-J>
-imap <buffer> ,,h4 === <++> ===<++><Esc>k0<C-J>
-imap <buffer> ,,h5 == <++> ==<++><Esc>k0<C-J>
-imap <buffer> ,,h6 = <++> =<++><Esc>k0<C-J>
+imap <buffer> ,,h1 ====== <++> ======
+<++><Esc>k0<C-J>
+imap <buffer> ,,h2 ===== <++> =====
+<++><Esc>k0<C-J>
+imap <buffer> ,,h3 ==== <++> ====
+<++><Esc>k0<C-J>
+imap <buffer> ,,h4 === <++> ===
+<++><Esc>k0<C-J>
+imap <buffer> ,,h5 == <++> ==
+<++><Esc>k0<C-J>
+imap <buffer> ,,h6 = <++> =
+<++><Esc>k0<C-J>
 
 "promote and demote
 imap <buffer> ,,hd <Esc>:s#=\(.*\)=#\1#<CR>:let @/ = ""<CR>
